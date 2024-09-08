@@ -1,0 +1,130 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: start;
+    background-color: black;
+    padding: 10px 20px;
+  }
+  
+  .navbar-logo img {
+    height: 14vh;
+    width: 14vw;
+    position: relative;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    align-items: self-end;
+  }
+  
+  .navbar-links li {
+    margin: 0 15px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navbar-links a:hover {
+    border-bottom: 1px solid red;
+  }
+
+  .navbar-item.active {
+    color: red !important;
+    border-bottom: none !important;
+  }
+
+  .navbar-toggle {
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    align-self: self-end;
+  }
+
+  .navbar-container {
+    display: none; /* Initially hidden */
+    transition: height 0.3s ease-in-out;
+  }
+  
+  .navbar-container.open {
+    display: block; /* Show the menu when open */
+  }
+
+  .navbar-container.open ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .toggler-container {
+    display: inline-grid;
+    justify-items: flex-end;
+  }
+       
+  @media (min-width: 768px) {
+    .navbar-toggle {
+      display: none; /* Hide the hamburger button on larger screens */
+    }
+  
+    .navbar-container {
+      display: block; /* Show the menu on larger screens */
+    }
+  
+    .navbar-links {
+      display: flex; /* Horizontal layout for larger screens */
+    }
+  
+    .navbar-links li {
+      margin-right: 20px; /* Add spacing between menu items */
+      background-color: transparent;
+    }
+  
+    .navbar-links li:hover {
+      background-color: transparent;
+      color: #ccc;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .navbar-logo img {
+      height: 32vh;
+      width: 32vw;
+      object-fit: contain;
+      object-position: center top;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1025px) {
+    .navbar-logo img {
+      height: 22vh;
+      width: 22vw;
+      object-fit: contain;
+      object-position: center top;
+    }
+
+    .navbar-links {
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1369px) {
+    .navbar-logo img {
+      height: 20vh;
+      width: 20vw;
+      object-fit: contain;
+      object-position: center top;
+    }
+  }
+
+  @media (min-width: 1369px) and (max-width: 1660px) {
+    .navbar-logo img {
+      height: 18vh;
+      width: 18vw;
+      object-fit: contain;
+      object-position: center top;
+    }
+  }
