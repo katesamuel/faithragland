@@ -1,0 +1,14 @@
+{
+    "rules": {
+      "max-len": [
+        "error",
+        {
+          "code": 100,             // Set the max line length (100 chars in this case)
+          "ignoreStrings": true,   // Allow long strings to wrap without warnings
+          "ignoreTemplateLiterals": true, // Allow template literals to be longer
+          "ignoreUrls": true,      // Ignore long URLs
+          "ignorePattern": "^import\\s.+\\sfrom\\s.+$" // Ignore long import statements
+        }
+      ]
+    }
+  }
