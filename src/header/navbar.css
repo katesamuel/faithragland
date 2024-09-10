@@ -65,6 +65,14 @@
     display: inline-grid;
     justify-items: flex-end;
   }
+
+  @media (max-width: 768px) {
+    .navbar {
+      position: absolute;
+      width: 90vw;
+      display: flex;
+    }
+  }
        
   @media (min-width: 768px) {
     .navbar-toggle {

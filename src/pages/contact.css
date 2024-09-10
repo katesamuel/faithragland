@@ -1,0 +1,81 @@
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 4% 2%;
+}
+
+.foreword {
+    margin-right: 12%;
+    align-content: flex-start;
+    width: 24vw;
+}
+
+.foreword p {
+    text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 50vw;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 4vw;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.button-container {
+    display: flex;
+    padding: 4% 8%;
+}
+
+.name,
+.email,
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    padding: 0 8%;
+}
+
+.message textarea {
+    width: 21vw;
+    height: 24vh;
+}
+
+input {
+    width: 8vw;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (min-width: 1025px) {}

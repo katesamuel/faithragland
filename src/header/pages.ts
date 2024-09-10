@@ -1,18 +1,23 @@
 export const menu = [
     {
-        name: 'about',
+        name: 'biography',
         index: 1,
         visibility: true,
         permissions: null,
     }, {
-        name: 'affiliations',
+        name: 'projects',
         index: 2,
         visibility: true,
         permissions: null,
     }, {
-        name: 'testimonials',
+        name: 'affiliations',
         index: 3,
         visibility: true,
+        permissions: null,
+    }, {
+        name: 'testimonials',
+        index: 4,
+        visibility: false,
         permissions: null,
     }, {
         name: 'booking',
