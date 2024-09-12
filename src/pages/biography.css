@@ -1,9 +1,57 @@
 .biography-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 120px;
 }
 
-.para-one {
+.section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4% 0;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  line-height: 24px;
+  width: 60%;
+  text-align: justify;
+  text-indent: 4%;
+}
+
+.faith-piano {
+  height: 300px;
+  mask-image: radial-gradient(ellipse at 30% 20%, black, transparent 90%);
+}
+
+.faith-conducts {
+  height: 300px;
+}
+
+@media (max-width: 1025px) {
+  .biography-container {
+    padding: 6%;
+    padding-top: 120px;
+  }
+
+  .section-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
+  }
+
+  .faith-piano {
+    height: auto;
+    width: 100%;
+  }
+
+  .faith-conducts {
+    height: auto;
+    width: 100%;
+  }
+
+  .text-container {
+    width: 100%;
+  }
 }

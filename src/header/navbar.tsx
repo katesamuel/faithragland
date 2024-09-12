@@ -69,7 +69,7 @@ const Navbar = () => {
     return () => {
       eventEmitter.off('customEvent', handleCustomEvent);
     };
-  }, []);
+  }, [isMenuOpen]);
 
   const match = useMatch("/");
   const toggler = isMenuOpen ? "x" : "☰";

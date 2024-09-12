@@ -93,6 +93,7 @@ const ContactForm: React.FC = () => {
               <textarea
                 id="message"
                 name="message"
+                className="message-text"
                 value={formData.message}
                 onChange={handleChange}
                 required

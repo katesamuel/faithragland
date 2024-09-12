@@ -3,7 +3,7 @@ import Navbar from './header/navbar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App scroll-container">
       <Navbar />
     </div>
   );

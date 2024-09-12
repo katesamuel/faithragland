@@ -1,18 +1,19 @@
 .contact-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 4% 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 4% 2%;
 }
 
 .foreword {
-    margin-right: 12%;
-    align-content: flex-start;
-    width: 24vw;
+  margin-right: 12%;
+  align-content: flex-start;
+  width: 24vw;
 }
 
 .foreword p {
-    text-align: left;
+  text-align: left;
+  width: 100%;
 }
 
 form {
@@ -52,32 +53,130 @@ button:hover {
 }
 
 .button-container {
-    display: flex;
-    padding: 4% 8%;
+  display: flex;
+  padding: 4% 8%;
 }
 
 .name,
 .email,
 .message {
-    display: flex;
-    flex-direction: column;
-    align-items: self-start;
-    padding: 0 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  padding: 0 8%;
 }
 
 .message textarea {
-    width: 21vw;
-    height: 24vh;
+  width: 21vw;
+  height: 24vh;
 }
 
 input {
-    width: 8vw;
+  width: 8vw;
 }
 
 .user-details {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-@media (min-width: 1025px) {}
+@media (max-width: 767px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    margin: 0;
+  }
+
+  form {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .name .email {
+    width: 40%;
+  }
+
+  .message {
+    width: 80%;
+  }
+
+  input,
+  textarea {
+    width: 100% !important;
+  }
+
+  .foreword {
+    width: 90%;
+    padding: 4%;
+  }
+
+  .user-details {
+    padding-left: 1%;
+    width: 90%;
+  }
+
+  .button-container button {
+    width: 20vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    margin: 0;
+  }
+
+  .foreword {
+    width: 100%;
+    padding: 0;
+    margin-right: 0;
+  }
+  form {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .name, .email {
+    width: 50%;
+    padding: 2%;
+    padding-right: 2%;
+  }
+
+  .message {
+    width: 100%;
+    padding: 2%;
+    padding-right: 2%;
+  }
+
+  input,
+  textarea {
+    width: 90%;
+  }
+
+  .message textarea {
+    width: 90%;
+    height: 24vh;
+  }
+
+  .user-details {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .button-container {
+    padding: 4% 2%;
+  }
+
+  .button-container button {
+    width: 12vw;
+  }
+
+  .foreword {
+    width: 90%;
+    padding: 4%;
+  }
+}
