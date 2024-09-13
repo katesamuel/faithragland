@@ -4,16 +4,16 @@ import { Route, NavLink, Routes } from "react-router-dom";
 import { menu } from "./pages";
 import { JSX } from "react/jsx-runtime";
 import { useMatch } from "react-router-dom";
-import Home from "../pages/home";
-import Biography from "../pages/biography";
-import Affiliations from "../pages/affiliations";
-import Testimonials from "../pages/testimonials";
-import Booking from "../pages/booking";
-import Blog from "../pages/blog";
-import ContactForm from "../pages/contact";
+import Home from "../pages/home/home";
+import Biography from "../pages/biography/biography";
+import Affiliations from "../pages/affiliations/affiliations";
+import Testimonials from "../pages/testimonials/testimonials";
+import Booking from "../pages/booking/booking";
+import Blog from "../pages/blog/blog";
+import ContactForm from "../pages/contact/contact";
 import { useEffect, useState } from "react";
 import { EventEmitter } from 'events';
-import Projects from "../pages/projects";
+import Projects from "../pages/projects/projects";
 
 const eventEmitter = new EventEmitter();
 
