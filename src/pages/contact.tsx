@@ -5,9 +5,9 @@ import { ContactContent } from "../assets/content/contact";
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -23,30 +23,26 @@ const ContactForm: React.FC = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
-    const templateParams = {
-      name: formData.name,
-      email: formData.email,
-      message: formData.message,
-    };
-
-    // Replace with your EmailJS service ID, template ID, and user ID
-    emailjs
-      .send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        templateParams,
-        "YOUR_USER_ID"
-      )
-      .then(() => {
-        setIsSubmitted(true);
-      })
-      .catch((error) => {
-        setErrorMessage("Failed to send the message. Please try again later.");
-        console.error("Email sending error:", error);
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
+
+      if (response.ok) {
+        alert('Email sent successfully!');
+      } else {
+        alert('Failed to send email');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Error sending email');
+    }
   };
 
   return (
