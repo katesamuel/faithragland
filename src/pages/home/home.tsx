@@ -1,4 +1,4 @@
-import HeadShot from "../assets/images/faith.png";
+import HeadShot from "../../assets/images/faith.png";
 import "./home.css";
 import { HomeContent } from "../../assets/content/home";
 

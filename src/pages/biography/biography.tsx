@@ -1,6 +1,6 @@
 import { BiographyContent } from "../../assets/content/biography";
-import FaithConducts from "../assets/images/FA-conducts.png";
-import FaithPiano from "../assets/images/fa.jpeg";
+import FaithConducts from "../../assets/images/FA-conducts.png";
+import FaithPiano from "../../assets/images/fa.jpeg";
 import "./biography.css";
 
 const Biography = () => {
