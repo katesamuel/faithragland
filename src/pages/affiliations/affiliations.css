@@ -1,0 +1,23 @@
+.affiliations-container {
+    padding-top: 20px;
+}
+
+.affiliation-list {
+    text-align: left;
+    padding-top: 20px;
+}
+
+.affiliation {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .affiliations-container {
+        padding-top: 160px;
+    }
+
+    .affiliation-list {
+        text-align: left;
+        padding: 20px;
+    }
+}

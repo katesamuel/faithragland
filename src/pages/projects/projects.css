@@ -1,0 +1,71 @@
+.projects-container {
+    padding-top: 20px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+.template-container {
+    text-align: left;
+    padding: 20px;
+    max-width: 45%;
+}
+
+h1 {
+    font-family: "MuseoSans-DisplayLight";
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+
+h3 {
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+h5 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+p {
+    line-height: 24px;
+}
+
+.ccc,
+.cco,
+.lsm,
+.c5 {
+    color: #57581d;
+}
+
+.museed {
+    color: green;
+}
+
+.fsm {
+    color: #cc4b6d;
+}
+
+@media (max-width: 999px) {
+    .template-container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    .projects-container {
+        padding-top: 120px;
+    }
+}
+
+@media (min-width: 560px) and (max-width: 820) {
+    .projects-container {
+        padding-top: 160px;
+    }
+}
