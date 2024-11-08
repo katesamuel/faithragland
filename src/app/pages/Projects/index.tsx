@@ -1,5 +1,5 @@
-import "./projects.css";
-import { ProjectContent } from "../../assets/content/projects";
+import "./index.css";
+import { ProjectContent } from "../../../assets/content/projects";
 const ProjectList: JSX.IntrinsicAttributes | JSX.Element[] = ProjectContent.map(
   (project, index) => {
     return (

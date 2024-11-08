@@ -1,19 +1,19 @@
-import logo from "../BrandLogo.svg";
-import "./navbar.css";
+import logo from "../../../BrandLogo.svg";
+import "./index.css";
 import { Route, NavLink, Routes } from "react-router-dom";
-import { menu } from "./pages";
+import { menu } from "../Header/pages";
 import { JSX } from "react/jsx-runtime";
 import { useMatch } from "react-router-dom";
-import Home from "../pages/home/home";
-import Biography from "../pages/biography/biography";
-import Affiliations from "../pages/affiliations/affiliations";
-import Testimonials from "../pages/testimonials/testimonials";
-import Booking from "../pages/booking/booking";
-import Blog from "../pages/blog/blog";
-import ContactForm from "../pages/contact/contact";
+import Home from "../../pages/Home";
+import Biography from "../../pages/Biography";
+import Affiliations from "../../pages/Affiliations";
+import Testimonials from "../../pages/Testimonials";
+import Booking from "../../pages/Booking";
+import Blog from "../../pages/Blog";
+import ContactForm from "../../pages/Contact";
 import { useEffect, useState } from "react";
 import { EventEmitter } from 'events';
-import Projects from "../pages/projects/projects";
+import Projects from "../../pages/Projects";
 
 const eventEmitter = new EventEmitter();
 

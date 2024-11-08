@@ -1,5 +1,5 @@
-import './affiliations.css';
-import { AffiliationsContent } from '../../assets/content/affiliations';
+import './index.css';
+import { AffiliationsContent } from '../../../assets/content/affiliations';
 
 const AffiliationList: JSX.IntrinsicAttributes | JSX.Element[] = AffiliationsContent.map(
     (affiliation, index) => {

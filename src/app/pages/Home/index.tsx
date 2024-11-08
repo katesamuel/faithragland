@@ -1,6 +1,6 @@
-import HeadShot from "../../assets/images/faith.png";
-import "./home.css";
-import { HomeContent } from "../../assets/content/home";
+import HeadShot from "../../../assets/images/faith.png";
+import "./index.css";
+import { HomeContent } from "../../../assets/content/home";
 
 const Home = () => {
   return (

@@ -1,7 +1,7 @@
-import { BiographyContent } from "../../assets/content/biography";
-import FaithConducts from "../../assets/images/FA-conducts.png";
-import FaithPiano from "../../assets/images/fa.jpeg";
-import "./biography.css";
+import { BiographyContent } from "../../../assets/content/biography";
+import FaithConducts from "../../../assets/images/faith-conducts.jpg";
+import FaithPiano from "../../../assets/images/fa.jpeg";
+import "./index.css";
 
 const Biography = () => {
   return (

@@ -1,6 +1,6 @@
 const Blog = () => {
     return (
-        <></>
+        <>Blogs page!</>
     )
 };
 
